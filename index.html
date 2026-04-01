@@ -49,7 +49,7 @@ nav::after { content:''; position:absolute; inset:0; background:linear-gradient(
 @keyframes blink { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.3;transform:scale(.6)} }
 
 /* BTN */
-.btn { display:inline-flex; align-items:center; gap:8px; padding:12px 24px; border:1px solid var(--border); color:var(--text); text-decoration:none; font-family:var(--fb); font-size:11px; letter-spacing:1.5px; text-transform:uppercase; position:relative; overflow:hidden; transition:color .3s,border-color .3s; }
+.btn { display:inline-flex; align-items:center; gap:8px; padding:12px 24px; border:1px solid var(--border); color:var(--text); text-decoration:none; font-family:var(--fb); font-size:11px; letter-spacing:1.5px; text-transform:uppercase; position:relative;  overflow:hidden; transition:color .3s,border-color .3s; }
 .btn::before { content:''; position:absolute; inset:0; background:var(--accent); transform:translateY(101%); transition:transform .35s cubic-bezier(.76,0,.24,1); }
 .btn span { position:relative; z-index:1; }
 .btn:hover { color:var(--bg); border-color:var(--accent); }
@@ -232,10 +232,6 @@ footer p { color:var(--muted); font-size:11px; letter-spacing:1px; }
   <h1 class="hero-name">Ahmed<span>El-Gendy</span></h1>
   <div class="hero-bottom">
     <p class="hero-desc">Building high-quality interfaces that scale — from design systems to production-ready components.</p>
-    <div class="hero-cta">
-      <a href="#projects" class="btn" data-nav><span>View Work</span></a>
-      <a href="#contact"  class="btn btn-ghost" data-nav><span>Get in Touch</span></a>
-    </div>
   </div>
   <div class="scroll-hint">Scroll</div>
 </section>
